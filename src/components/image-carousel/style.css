@@ -1,0 +1,178 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+body .image-carousel-wrapper {
+  height: 700px;
+}
+body .image-carousel-wrapper .image-carousel {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+body .image-carousel-wrapper .image-carousel .slide-item {
+  width: 100%;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+body .image-carousel-wrapper .image-carousel .slide-item.active {
+  display: block;
+}
+body .image-carousel-wrapper .image-carousel .slide-item .image-desc-wrapper .image-desc {
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  bottom: 20%;
+  width: 60%;
+  position: absolute;
+  left: 145px;
+}
+body .image-carousel-wrapper .image-carousel .slide-item .image-desc-wrapper .image-desc h2 {
+  font-size: 3vw;
+  font-weight: 800;
+  color: #fff;
+}
+body .image-carousel-wrapper .image-carousel .slide-item .image-desc-wrapper .image-desc .divider {
+  width: 20%;
+  margin: 30px 0;
+  height: 6px;
+  background: #b08a43;
+  display: block;
+}
+body .image-carousel-wrapper .image-carousel .slide-item .image-desc-wrapper .image-desc h3 {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.4vw;
+  color: #fff;
+}
+body .image-carousel-wrapper .image-carousel .slide-item img {
+  height: 700px;
+  display: block;
+  width: 107%;
+}
+body .image-carousel-wrapper .button-prev {
+  display: block;
+  background: url(../../media/images/arrow_left.png) left bottom no-repeat;
+  height: 40px;
+  left: 20px;
+  width: 30px;
+  right: auto;
+  position: absolute;
+  top: 40%;
+  margin-top: -22px;
+  cursor: pointer;
+  background-size: 1.7vw 2.4vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+body .image-carousel-wrapper .button-next {
+  display: block;
+  background: url(../../media/images/arrow_right.png) left top no-repeat;
+  height: 40px;
+  right: 20px;
+  width: 30px;
+  left: auto;
+  position: absolute;
+  top: 40%;
+  margin-top: -22px;
+  cursor: pointer;
+  background-size: 1.7vw 2.4vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+body .slide-item {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  z-index: -1;
+  display: flex;
+  -o-transition: 0.64s;
+  -ms-transition: 0.64s;
+  -moz-transition: 0.64s;
+  -webkit-transition: 0.64s;
+  transition: 0.64s;
+}
+body .active-reverse {
+  transform: translate(-100%);
+  z-index: 10;
+}
+body .last-slide-reverse {
+  transform: translate(-200%);
+  z-index: -10;
+}
+body .active {
+  transform: translate(-200%);
+  z-index: -10;
+}
+body .last-slide {
+  transform: translate(-100%);
+  z-index: 10;
+}
+@media screen and (max-width: 767px) {
+  body .image-carousel-wrapper {
+    height: 310px;
+  }
+  body .image-carousel-wrapper .image-carousel .slide-item img {
+    height: 310px;
+    width: 100%;
+  }
+  body .image-carousel-wrapper .button-prev,
+  body .image-carousel-wrapper .button-next {
+    top: 20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body .image-carousel-wrapper {
+    height: 420px;
+  }
+  body .image-carousel-wrapper .image-carousel .slide-item img {
+    height: 420px;
+    width: 100%;
+  }
+  body .image-carousel-wrapper .button-prev,
+  body .image-carousel-wrapper .button-next {
+    top: 24%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body .image-carousel-wrapper {
+    height: 510px;
+  }
+  body .image-carousel-wrapper .image-carousel .slide-item img {
+    height: 510px;
+    width: 100%;
+  }
+  body .image-carousel-wrapper .button-prev,
+  body .image-carousel-wrapper .button-next {
+    top: 29%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  body .image-carousel-wrapper {
+    height: 635px;
+  }
+  body .image-carousel-wrapper .image-carousel .slide-item img {
+    height: 635px;
+    width: 100%;
+  }
+  body .image-carousel-wrapper .button-prev,
+  body .image-carousel-wrapper .button-next {
+    top: 35%;
+  }
+}

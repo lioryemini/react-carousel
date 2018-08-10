@@ -1,0 +1,54 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "name": "The Darkest Minds",
+            "info": "In Theaters August 3, 2018"
+        },
+        {
+            "id": 2,
+            "name": "THE PREDATOR",
+            "info": "IN THEATERS SEPTEMBER 14, 2018"
+        },
+        {
+            "id": 3,
+            "name": "Bad Times At The El Royale",
+            "info": "In Theaters October 12, 2018"
+        },
+        {
+            "id": 4,
+            "name": "THE HATE U GIVE",
+            "info": "IN THEATERS OCTOBER 19, 2018"
+        },
+        {
+            "id": 5,
+            "name": "BOHEMIAN RHAPSODY",
+            "info": "In Theaters November 2, 2018"
+        },
+        {
+            "id": 6,
+            "name": "Widows",
+            "info": "In Theaters November 16, 2018"
+        },
+        {
+            "id": 7,
+            "name": "Alita: Battle Angel",
+            "info": "In Theaters December 21, 2018"
+        },
+        {
+            "id": 8,
+            "name": "ISLE OF DOGS",
+            "info": "NOW ON BLU-RAY, DVD & DIGITAL"
+        },
+        {
+            "id": 9,
+            "name": "SUPER TROOPERS 2",
+            "info": "Available Meow on Blu-ray, DVD & Digital"
+        },
+        {
+            "id": 10,
+            "name": "Deadpool 2",
+            "info": "On Digital August 7 | On Blu-ray & 4K Ultra HD August 21"
+        }
+    ]
+}
